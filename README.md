@@ -19,9 +19,13 @@ Here are some ideas to get you started:
 🌱 Aprendiendo constantemente 🤓
 
 ### :zap: Actividad reciente
+<!--RECENT_ACTIVITY:start-->
+<!--RECENT_ACTIVITY:last_update-->
+
 <!--START_SECTION:activity-->
 
 <!--END_SECTION:activity-->
+
 
 ```csharp
 using System;
