@@ -16,6 +16,12 @@ Here are some ideas to get you started:
 -->
 :computer: **Desarrollador de Software**
 
+⚙️ C# · .NET · Angular
+
+📍 Medellín, Colombia
+
+💼 +11 años creando software
+
 🌱 Aprendiendo constantemente 🤓
 
 ### :zap: Actividad reciente
@@ -35,24 +41,53 @@ Last Updated: Wednesday, April 1st, 2026, 1:40:00 PM
 
 
 ```csharp
-using System;
+// 🚀 Carlos Pineda Salazar — .NET 9 | C# 13
 
-class Program
+var dev = new Developer("Carlos Pineda Salazar", "Senior Software Developer", 11);
+
+dev.Backend =    ["⚙️ C#", "⚙️ .NET 8/9", "⚙️ ASP.NET Core", "⚙️ Web API REST", "⚙️ CQRS", "⚙️ Clean Architecture"];
+dev.Frontend =   ["🎨 Angular 17+", "🎨 TypeScript", "🎨 HTML5", "🎨 CSS3"];
+dev.Databases =  ["🗄️ SQL Server", "🗄️ MySQL"];
+dev.DevOps =     ["🐳 Docker", "🔀 Git", "🐙 GitHub", "🦊 GitLab", "🔄 CI/CD"];
+dev.Testing =    ["🧪 xUnit", "🧪 Mock", "🧪 Unit Testing"];
+dev.SoftSkills = ["🤝 Trabajo en equipo", "💬 Comunicación efectiva", "🧠 Resolución de problemas"];
+
+dev.PrintProfile();
+
+// Output:
+// 👨‍💻 Carlos Pineda Salazar
+// 💼 Senior Software Developer · 11+ años de experiencia
+//
+// ⚙️ Backend:    ⚙️ C# · ⚙️ .NET 8/9 · ⚙️ ASP.NET Core · ⚙️ Web API REST · ⚙️ CQRS · ⚙️ Clean Architecture
+// 🎨 Frontend:   🎨 Angular 17+ · 🎨 TypeScript · 🎨 HTML5 · 🎨 CSS3
+// 🗄️ Databases:  🗄️ SQL Server · 🗄️ MySQL
+// 🐳 DevOps:     🐳 Docker · 🔀 Git · 🐙 GitHub · 🦊 GitLab · 🔄 CI/CD
+// 🧪 Testing:    🧪 xUnit · 🧪 Mock · 🧪 Unit Testing
+// 🤝 Soft Skills: 🤝 Trabajo en equipo · 💬 Comunicación efectiva · 🧠 Resolución de problemas
+
+public record Developer(string Name, string Role, int YearsOfExperience)
+{
+    public List<string> Backend { get; set; } = [];
+    public List<string> Frontend { get; set; } = [];
+    public List<string> Databases { get; set; } = [];
+    public List<string> DevOps { get; set; } = [];
+    public List<string> Testing { get; set; } = [];
+    public List<string> SoftSkills { get; set; } = [];
+
+    public void PrintProfile()
     {
-        private const MyProfile = new 
-        {
-            Name = "Carlos Pineda Salazar",
-            Skills = [
-                "C#",
-                ".NET",
-                "Angular"
-            ]
-        };
-
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Información del usuario:");
-            Console.WriteLine(MyProfile);
-        }
+        Console.WriteLine($"👨‍💻 {Name}");
+        Console.WriteLine($"💼 {Role} · {YearsOfExperience}+ años de experiencia");
+        Console.WriteLine();
+        PrintSection("⚙️ Backend", Backend);
+        PrintSection("🎨 Frontend", Frontend);
+        PrintSection("🗄️ Databases", Databases);
+        PrintSection("🐳 DevOps", DevOps);
+        PrintSection("🧪 Testing", Testing);
+        PrintSection("🤝 Soft Skills", SoftSkills);
     }
+
+    private void PrintSection(string title, List<string> items)
+        => Console.WriteLine($"{title,-15} {string.Join(" · ", items)}");
+}
 ```
