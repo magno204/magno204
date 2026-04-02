@@ -58,12 +58,12 @@ dev.PrintProfile();
 // 👨‍💻 Carlos Pineda Salazar
 // 💼 Senior Software Developer · 11+ años de experiencia
 //
-// ⚙️ Backend:    ⚙️ C# · ⚙️ .NET 8/9 · ⚙️ ASP.NET Core · ⚙️ Web API REST · ⚙️ CQRS · ⚙️ Clean Architecture
-// 🎨 Frontend:   🎨 Angular 17+ · 🎨 TypeScript · 🎨 HTML5 · 🎨 CSS3
-// 🗄️ Databases:  🗄️ SQL Server · 🗄️ MySQL
-// 🐳 DevOps:     🐳 Docker · 🔀 Git · 🐙 GitHub · 🦊 GitLab · 🔄 CI/CD
-// 🧪 Testing:    🧪 xUnit · 🧪 Mock · 🧪 Unit Testing
-// 🤝 Soft Skills: 🤝 Trabajo en equipo · 💬 Comunicación efectiva · 🧠 Resolución de problemas
+// ⚙️ Backend       ⚙️ C# · ⚙️ .NET 8/9 · ⚙️ ASP.NET Core · ⚙️ Web API REST · ⚙️ CQRS · ⚙️ Clean Architecture
+// 🎨 Frontend      🎨 Angular 17+ · 🎨 TypeScript · 🎨 HTML5 · 🎨 CSS3
+// 🗄️ Databases     🗄️ SQL Server · 🗄️ MySQL
+// 🐳 DevOps        🐳 Docker · 🔀 Git · 🐙 GitHub · 🦊 GitLab · 🔄 CI/CD
+// 🧪 Testing       🧪 xUnit · 🧪 Mock · 🧪 Unit Testing
+// 🤝 Soft Skills   🤝 Trabajo en equipo · 💬 Comunicación efectiva · 🧠 Resolución de problemas
 
 public record Developer(string Name, string Role, int YearsOfExperience)
 {
