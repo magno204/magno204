@@ -17,11 +17,8 @@ Here are some ideas to get you started:
 :computer: **Desarrollador de Software**
 
 ⚙️ C# · .NET · Angular
-
 📍 Medellín, Colombia
-
-💼 +11 años creando software
-
+💼 +13 años creando software
 🌱 Aprendiendo constantemente 🤓
 
 ### :zap: Actividad reciente
